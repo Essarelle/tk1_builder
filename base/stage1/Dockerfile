@@ -7,7 +7,7 @@ COPY qemu-arm-static /usr/bin/
 
 ENV QEMU_BIN_DIR=/usr/bin
 ADD ./register.sh /register
-ADD ./qemu-binfmt-conf.sh /qemu-binfmt-conf.sh
+ADD https://raw.githubusercontent.com/Essarelle/tk1_builder/master/base/stage1/qemu-binfmt-conf.sh /qemu-binfmt-conf.sh
 RUN chmod +x /qemu-binfmt-conf.sh
 
 
